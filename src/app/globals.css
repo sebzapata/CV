@@ -34,46 +34,69 @@ main {
 }
 
 .page {
-  background-color: white;
   width: 21cm;
   height: 29.7cm;
+  background-color: white;
   display: flex;
-  flex-direction: row;
-}
-
-.leftHandColumn {
-  width: 37.5%;
-  background-color: rgb(180, 180, 180);
-  color: black;
+  flex-direction: column;
+  padding: 16px 32px;
   font-size: 14px;
 
   & h1 {
-    color: white;
-    font-size: 24px;
+    font-size: 28px;
   }
 
   & h2 {
-    color: white;
     font-size: 18px;
+    margin-bottom: 4px;
+    font-weight: bold;
   }
 
   .personalInfo {
     display: flex;
     flex-direction: column;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
+
+    .name {
+      text-align: center;
+    }
 
     .details {
       margin-bottom: 8px;
+      display: flex;
+      flex-wrap: wrap;
+      width: 70%;
+      align-self: center;
+      justify-content: center;
 
       & span {
+        display: flex;
         line-height: 24px;
         align-items: center;
+        margin-right: 12px;
       }
+    }
+
+    .statement {
+      text-align: center;
     }
   }
 
   .education {
-    margin-bottom: 8px;
+    margin-bottom: 6px;
+
+    .details {
+      margin-bottom: 8px;
+      display: flex;
+      flex-wrap: wrap;
+
+      & span {
+        display: flex;
+        line-height: 24px;
+        align-items: center;
+        margin-right: 24px;
+      }
+    }
 
     & span {
       align-items: center;
@@ -81,12 +104,17 @@ main {
   }
 
   .skills {
-    margin-bottom: 8px;
+    margin-bottom: 6px;
 
-    & li {
-      min-width: 50%;
-      list-style-type: circle;
-      list-style-position: inside;
+    .skills--details {
+      display: flex;
+      flex-wrap: wrap;
+
+      & li {
+        min-width: 20%;
+        list-style-type: circle;
+        list-style-position: inside;
+      }
     }
   }
 
@@ -96,21 +124,10 @@ main {
       list-style-position: inside;
     }
   }
-}
-
-.rightHandColumn {
-  width: 62.5%;
-  padding: 1.25rem;
-  font-size: 14px;
-
-  & h1 {
-    font-size: 24px;
-    margin-bottom: 8px;
-  }
 
   .jobWrapper {
     width: 100%;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
 
     .jobHeader {
       display: flex;
