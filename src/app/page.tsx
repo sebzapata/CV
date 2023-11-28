@@ -2,7 +2,7 @@ import { education, interests, jobs, myInfo, skills } from "./data";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main>
       <div className="page">
         <div className="leftHandColumn p-5">
           <div className="personalInfo">

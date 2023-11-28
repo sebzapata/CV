@@ -26,6 +26,13 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6rem;
+}
+
 .page {
   background-color: white;
   width: 21cm;
