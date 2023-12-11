@@ -5,7 +5,7 @@ export const myInfo: { icon: JSX.Element; text: string }[] = [
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
-        strokeWidth="1.5"
+        strokeWidth={1.5}
         stroke="currentColor"
         className="w-4 h-4 mr-1"
       >
@@ -16,7 +16,7 @@ export const myInfo: { icon: JSX.Element; text: string }[] = [
         />
       </svg>
     ),
-    text: "sebzapata@hotmail.co.uk",
+    text: "sebzapatajobs@gmail.com",
   },
   {
     icon: (
@@ -24,7 +24,7 @@ export const myInfo: { icon: JSX.Element; text: string }[] = [
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
-        strokeWidth="1.5"
+        strokeWidth={1.5}
         stroke="currentColor"
         className="w-4 h-4 mr-1"
       >
@@ -32,10 +32,10 @@ export const myInfo: { icon: JSX.Element; text: string }[] = [
           strokeLinecap="round"
           strokeLinejoin="round"
           d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
-        />{" "}
+        />
       </svg>
     ),
-    text: "07981158192",
+    text: "07949049833",
   },
   {
     icon: (
@@ -69,6 +69,25 @@ export const myInfo: { icon: JSX.Element; text: string }[] = [
         <path
           strokeLinecap="round"
           strokeLinejoin="round"
+          d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"
+        />
+      </svg>
+    ),
+    text: "sebzapata.netlify.app",
+  },
+  {
+    icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        strokeWidth={1.5}
+        stroke="currentColor"
+        className="w-4 h-4 mr-1"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
           d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
         />
         <path
@@ -81,6 +100,9 @@ export const myInfo: { icon: JSX.Element; text: string }[] = [
     text: "Bristol, UK",
   },
 ];
+
+export const statement =
+  "I am a professional, fullstack software developer, focusing on frontend development. I have over 6 years' experience using React and thoroughly enjoy having an idea and making it a reality on screen.";
 
 export const education: { icon: JSX.Element; text: string }[] = [
   {
@@ -161,8 +183,8 @@ export const skills: string[] = [
   "React Query",
   "Axios",
   "React Hook Form",
-  "React Testing Library",
   "i18next",
+  "React Testing Library",
   "Selenium",
   "Cypress",
   "Jest",
@@ -174,12 +196,14 @@ export const skills: string[] = [
   "Mock Service Worker",
 ];
 
-export const interests: string[] = [
-  "I enjoy making scented candles from upcycled wine bottles. This makes use of my creative and scientific skills. ",
-  "Avid baker, frequently making cakes for a variety of celebrations.",
-  // Have also created www.hollywoodhandshakes.com, a personal project of mine which has gained over 13,000 views from over 70 countries.",
-  "I've been playing the guitar for over 15 years, which requires perseverance and practice. I also enjoy creating recordings and videos of myself, editing them, and putting the various angles together. ",
-  "I am passionate about music and going to live concerts",
+export const interests: (string | JSX.Element)[] = [
+  "Enjoy making scented candles from upcycled wine bottles.",
+  "Avid baker, frequently making desserts for a variety of celebrations.",
+  // "Enjoy playing guitar and creating recordings and videos of myself.",
+  <span key="3">
+    Huge <i>It&apos;s Always Sunny in Philadelphia</i> fan.
+  </span>,
+  "Passionate about music and going to live concerts.",
 ];
 
 export const jobs: { company: string; date: string; description: string[] }[] =
@@ -188,26 +212,27 @@ export const jobs: { company: string; date: string; description: string[] }[] =
       company: "Davies Group, Llanelli",
       date: "Jul 2022 to present",
       description: [
-        "Started on the Caerphilly Council project which allowed me to get familiar with some of the frameworks and packages that I could expect to be using within Davies.",
-        "Was part of the initial setup & creation of project Omega to provide a high profile drinks company a platform to order marketing supplies.",
-        "This project was set up as a monorepo, to allow for the easy creation of various white-label sites.",
-        "APIs were implemented using React Query, as efficient as possible.",
-        "Mock data was provided using Mock Service Worker whilst awaiting for the completed API from the client.",
-        "Components were tested with React Testing Library, and UI tests were performed with Cypress.",
-        "I had regular calls with the business analyst, client, project manager, and other team members to ensure that the work was delivered as smoothly as possible.",
+        "Created various forms using React Hook Form and Zod for validation, then sent the data via APIs using React Query.",
+        "Made different components to filter the data by appending a sieve string to the endpoint, and displaying the data in custom components.",
+        "Configured the project so that it could be viewed in a variety of languages using i18next.",
+        "Used MUI for creating components, modifying base themes to match our style.",
+        "Handled global state across the site using Redux.",
+        "Worked on a monorepo project, which allowed for the easy creation of various white-label sites.",
+        "Provided mock data using Mock Service Worker.",
+        "Tested components with React Testing Library, and performed UI tests with Cypress.",
       ],
     },
     {
       company: "Travel Chapter, Bristol",
       date: "Jan 2020 to Jul 2022",
       description: [
-        "Was part of the initial team helping to rewrite the existing ASP.NET site into React.",
-        "I created complex components, ensured styling matched the original site, came up with creative ways to implement new features and ensured everything was thoroughly unit tested.",
+        "Rewrote the existing ASP.NET site into React, making components to filter properties by facilities, dates & location etc, to display the details of properties in info cards and to add properties to a user's wishlist.",
+        "Ensured styling matched the original site, came up with creative ways to implement new features and made sure everything was thoroughly unit tested with Jest & Enzyme.",
         "Was lead dev for a project requiring us to rewrite and consolidate all the existing internal tools which were in various repositories and languages into one online website.",
-        "Created wireframes and designed the pages as I best saw fit.",
-        "I would create tables in the database, write functions to interact with the data, create an API to execute said function and then produce the frontend page.",
-        "I was given the responsibility of training up the junior members of the team with React and TypeScript, and assisting them whenever they had problems.",
-        "Did regular presentations of the work that had been developed that sprint to those that would use it.",
+        "Designed wireframes for the pages, chose what tools and frameworks would be used and made sure that code of all team members was written to a high standard.",
+        "Created tables in the database, functions to interact with the data, APIs to execute said function and then the wrote the frontend pages which would call the APIs.",
+        "Trained up the junior members of the team with React, TypeScript and Next.js, and assisted them whenever they had problems.",
+        "Gave regular presentations of the work that had been developed that sprint to the client.",
       ],
     },
     {
@@ -215,8 +240,9 @@ export const jobs: { company: string; date: string; description: string[] }[] =
       date: "Oct 2017 to Jan 2020",
       description: [
         "Started as a graduate developer, having weekly learning sessions for the first 6 months.",
-        "Over the next 6 months, we used what we had learned to create a desk finding website for use within the office.",
-        "This was all done whilst working on a commercial project, picking up more challenging pieces of work as I continued to learn.",
+        "Wrote in React, and hosted on AWS, a desk finding app for use within the office. I focussed on designing the desk layout that highlighted free desks, and the login page.",
+        "Made components for a flight tracking website that utilised live data from APIs to visualise planes on a map.",
+        "Made use of various APIs to create a variety of forms that adhered to GovUK design standards.",
       ],
     },
   ];
