@@ -35,7 +35,7 @@ export const myInfo: { icon: JSX.Element; text: string }[] = [
         />
       </svg>
     ),
-    text: "07981158192",
+    text: "07949049833",
   },
   {
     icon: (
@@ -212,25 +212,26 @@ export const jobs: { company: string; date: string; description: string[] }[] =
       company: "Davies Group, Llanelli",
       date: "Jul 2022 to present",
       description: [
-        "Produced a complaints handling page for Caerphilly Council.",
-        "Provided a high profile drinks company a platform to order marketing supplies.",
+        "Created various forms using React Hook Form and Zod for validation, then sent the data via APIs using React Query.",
+        "Made different components to filter the data by appending a sieve string to the endpoint, and displaying the data in custom components.",
+        "Configured the project so that it could be viewed in a variety of languages using i18next.",
+        "Used MUI for creating components, modifying base themes to match our style.",
+        "Handled global state across the site using Redux.",
         "Worked on a monorepo project, which allowed for the easy creation of various white-label sites.",
-        "Implemented APIs using React Query, as efficient as possible.",
         "Provided mock data using Mock Service Worker.",
         "Tested components with React Testing Library, and performed UI tests with Cypress.",
-        "Had regular calls with the business analyst, client, project manager, and other team members.",
       ],
     },
     {
       company: "Travel Chapter, Bristol",
       date: "Jan 2020 to Jul 2022",
       description: [
-        "Rewrote the existing ASP.NET site into React.",
-        "Created complex components, ensured styling matched the original site, came up with creative ways to implement new features and ensured everything was thoroughly unit tested.",
+        "Rewrote the existing ASP.NET site into React, making components to filter properties by facilities, dates & location etc, to display the details of properties in info cards and to add properties to a user's wishlist.",
+        "Ensured styling matched the original site, came up with creative ways to implement new features and made sure everything was thoroughly unit tested with Jest & Enzyme.",
         "Was lead dev for a project requiring us to rewrite and consolidate all the existing internal tools which were in various repositories and languages into one online website.",
-        "Created wireframes and designed the pages as I best saw fit.",
-        "Created tables in the database, functions to interact with the data, APIs to execute said function and then produced the frontend page.",
-        "Trained up the junior members of the team with React and TypeScript, and assisted them whenever they had problems.",
+        "Designed wireframes for the pages, chose what tools and frameworks would be used and made sure that code of all team members was written to a high standard.",
+        "Created tables in the database, functions to interact with the data, APIs to execute said function and then the wrote the frontend pages which would call the APIs.",
+        "Trained up the junior members of the team with React, TypeScript and Next.js, and assisted them whenever they had problems.",
         "Gave regular presentations of the work that had been developed that sprint to the client.",
       ],
     },
@@ -239,8 +240,9 @@ export const jobs: { company: string; date: string; description: string[] }[] =
       date: "Oct 2017 to Jan 2020",
       description: [
         "Started as a graduate developer, having weekly learning sessions for the first 6 months.",
-        "Used what we had learned to create a desk finding website for use within the office.",
-        "Worked on commercials projects, picking up more challenging pieces of work as I continued to learn.",
+        "Wrote in React, and hosted on AWS, a desk finding app for use within the office. I focussed on designing the desk layout that highlighted free desks, and the login page.",
+        "Made components for a flight tracking website that utilised live data from APIs to visualise planes on a map.",
+        "Made use of various APIs to create a variety of forms that adhered to GovUK design standards.",
       ],
     },
   ];

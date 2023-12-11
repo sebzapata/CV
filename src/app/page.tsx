@@ -38,8 +38,8 @@ export default function Home() {
           {jobs.map((job) => (
             <div key={job.date} className="jobWrapper">
               <span className="jobHeader">
-                <p className="jobHeader--date">{job.date}</p>
                 <p className="jobHeader--company">{job.company}</p>
+                <p className="jobHeader--date">{job.date}</p>
               </span>
               <div className="jobDescription">
                 <ul>
@@ -51,14 +51,14 @@ export default function Home() {
             </div>
           ))}
         </div>
-        <div className="personalInterests">
+        {/* <div className="personalInterests">
           <h2>Personal Interests</h2>
           <ul>
             {interests.map((interest, idx) => (
               <li key={`interestLine-${idx}`}>{interest}</li>
             ))}
           </ul>
-        </div>
+        </div> */}
       </div>
     </main>
   );
