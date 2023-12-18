@@ -56,25 +56,25 @@ export const myInfo: { icon: JSX.Element; text: string }[] = [
     ),
     text: "linkedin.com/in/sebzapata",
   },
-  {
-    icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth={1.5}
-        stroke="currentColor"
-        className="w-4 h-4 mr-1"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"
-        />
-      </svg>
-    ),
-    text: "sebzapata.netlify.app",
-  },
+  // {
+  //   icon: (
+  //     <svg
+  //       xmlns="http://www.w3.org/2000/svg"
+  //       fill="none"
+  //       viewBox="0 0 24 24"
+  //       strokeWidth={1.5}
+  //       stroke="currentColor"
+  //       className="w-4 h-4 mr-1"
+  //     >
+  //       <path
+  //         strokeLinecap="round"
+  //         strokeLinejoin="round"
+  //         d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"
+  //       />
+  //     </svg>
+  //   ),
+  //   text: "sebzapata.netlify.app",
+  // },
   {
     icon: (
       <svg
@@ -97,7 +97,7 @@ export const myInfo: { icon: JSX.Element; text: string }[] = [
         />
       </svg>
     ),
-    text: "Bristol, UK",
+    text: "Manchester, UK",
   },
 ];
 
@@ -171,25 +171,25 @@ export const skills: string[] = [
   "Next.js",
   "JavaScript",
   "Redux",
-  "C# ",
+  // "C# ",
   "AWS",
   "Azure",
-  "Node.js",
+  // "Node.js",
   "SQL",
-  "DynamoDB",
+  // "DynamoDB",
   "CSS",
   "HTML5",
   "Nx",
   "React Query",
   "Axios",
   "React Hook Form",
-  "i18next",
   "React Testing Library",
-  "Selenium",
-  "Cypress",
   "Jest",
+  "Cypress",
+  "i18next",
+  // "Selenium",
   "git",
-  "Jenkins",
+  // "Jenkins",
   "MUI",
   "Bootstrap",
   "Storybook",
@@ -209,10 +209,11 @@ export const interests: (string | JSX.Element)[] = [
 export const jobs: { company: string; date: string; description: string[] }[] =
   [
     {
-      company: "Davies Group, Llanelli",
+      company: "Davies Group, Llanelli - Software Developer",
       date: "Jul 2022 to present",
       description: [
         "Created various forms using React Hook Form and Zod for validation, then sent the data via APIs using React Query.",
+        "Was noticed for my capabilities and was tasked with implementing a complex checkout process. Taking ownership of this freed up more time for leadership team.",
         "Made different components to filter the data by appending a sieve string to the endpoint, and displaying the data in custom components.",
         "Configured the project so that it could be viewed in a variety of languages using i18next.",
         "Used MUI for creating components, modifying base themes to match our style.",
@@ -223,12 +224,12 @@ export const jobs: { company: string; date: string; description: string[] }[] =
       ],
     },
     {
-      company: "Travel Chapter, Bristol",
+      company: "Travel Chapter, Bristol - Software Developer",
       date: "Jan 2020 to Jul 2022",
       description: [
         "Rewrote the existing ASP.NET site into React, making components to filter properties by facilities, dates & location etc, to display the details of properties in info cards and to add properties to a user's wishlist.",
         "Ensured styling matched the original site, came up with creative ways to implement new features and made sure everything was thoroughly unit tested with Jest & Enzyme.",
-        "Was lead dev for a project requiring us to rewrite and consolidate all the existing internal tools which were in various repositories and languages into one online website.",
+        "Was lead dev for a project to rewrite and consolidate all the existing internal tools which were in various repositories and languages into one online website.",
         "Designed wireframes for the pages, chose what tools and frameworks would be used and made sure that code of all team members was written to a high standard.",
         "Created tables in the database, functions to interact with the data, APIs to execute said function and then the wrote the frontend pages which would call the APIs.",
         "Trained up the junior members of the team with React, TypeScript and Next.js, and assisted them whenever they had problems.",
@@ -236,7 +237,7 @@ export const jobs: { company: string; date: string; description: string[] }[] =
       ],
     },
     {
-      company: "BJSS, Bristol",
+      company: "BJSS, Bristol - Software Developer",
       date: "Oct 2017 to Jan 2020",
       description: [
         "Started as a graduate developer, having weekly learning sessions for the first 6 months.",
