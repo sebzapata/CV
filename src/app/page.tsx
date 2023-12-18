@@ -29,7 +29,9 @@ export default function Home() {
           <h2>Skills</h2>
           <div className="skills--details">
             {skills.map((skill) => (
-              <li key={skill}>{skill}</li>
+              <li key={skill}>
+                <span>{skill}</span>
+              </li>
             ))}
           </div>
         </div>
