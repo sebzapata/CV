@@ -16,7 +16,7 @@ export const myInfo: { icon: JSX.Element; text: string }[] = [
         />
       </svg>
     ),
-    text: "sebzapatajobs@gmail.com",
+    text: "sebzapata@hotmail.co.uk",
   },
   {
     icon: (
@@ -35,7 +35,7 @@ export const myInfo: { icon: JSX.Element; text: string }[] = [
         />
       </svg>
     ),
-    text: "07949049833",
+    text: "07981158192",
   },
   {
     icon: (
@@ -101,8 +101,10 @@ export const myInfo: { icon: JSX.Element; text: string }[] = [
   },
 ];
 
-export const statement =
-  "I am a professional, fullstack software developer, focusing on frontend development. I have over 6 years' experience using React and thoroughly enjoy having an idea and making it a reality on screen.";
+export const statementA =
+  "I am a professional software developer, focusing on frontend development.";
+export const statementB =
+  "I have over 8 years' experience using React and thoroughly enjoy having an idea and making it a reality on screen.";
 
 export const education: { icon: JSX.Element; text: string }[] = [
   {
@@ -186,6 +188,7 @@ export const skills: string[] = [
   "React Testing Library",
   "Jest",
   "Cypress",
+  "Playwright",
   "i18next",
   // "Selenium",
   "git",
@@ -193,6 +196,8 @@ export const skills: string[] = [
   "MUI",
   "Bootstrap",
   "Storybook",
+  "Tailwind",
+
   "Mock Service Worker",
 ];
 
@@ -208,9 +213,52 @@ export const interests: (string | JSX.Element)[] = [
 
 export const jobs: { company: string; date: string; description: string[] }[] =
   [
+    // {
+    //   company: "Cox Automotive, Manchester - Lead Frontend Engineer",
+    //   date: "Nov 2025 to present",
+    //   description: [
+    //     "Making use of existing skills in React and frontend development to write and release code in an Angular project, learning to adapt to a new framework and new concepts.",
+    //     "Writing integration tests for new code, ensuring all main flows of work are covered.",
+    //     "Collaborating with the backend team to agree upon API schemas, implement them in TypeScript and then integrate the API into the frontend code.",
+    //   ],
+    // },
+    // {
+    //   company: "BrightHR, Manchester - Senior Frontend Developer",
+    //   date: "Mar 2024 to present",
+    //   description: [
+    //     "Directly mentored a mid level developer on my team as well as providing support and assistance to other junior developers. We had regular 1-1 meetings which helped boost her confidence and ability.",
+    //     "Often ran talks on important topics within our frontend guild, helping to share knowledge and improve the codebase.",
+    //     "Became familiar with micro-frontend architecture in React, supporting the development of an existing modular frontend system.",
+    //     "Created various APIs using .NET, often in conjunction with coding the corresponding frontend components.",
+    //     "I was the lead of various frontend initiatives within the guild to improve our repo, aiming to either eliminate tech debt or upgrade areas of the code, such as converting older JS files to TypeScript or rewriting old Enzyme tests into React Testing Library.",
+    //     "Involved in the creation of technical tasks for large features, communicating with other key members of the team.",
+    //     "Helped to write components from scratch for our custom component library, discussing ideas with the UX team.",
+    //     "Involved in the recruitment process of employees. Reviewing CVs, tech tasks and participating in interviews.",
+    //     "Able to prioritise work well when made aware of live issues whilst currently working on an active feature.",
+    //     "Collaborated with the principal frontend developers to improve the codebase quality, security and efficiency.",
+    //     "Confident with CI/CD pipelines and creating GitHub Actions to automate tasks, helping make processes more efficient or to collect data on the repositories for a bespoke dashboard.",
+    //   ],
+    // },
+    {
+      company: "BrightHR, Manchester - Senior Frontend Developer",
+      date: "Mar 2024 to present",
+      description: [
+        "Directly mentoring a mid level developer on my team as well as providing support and assistance to other junior developers. We have regular 1-1 meetings which have helped boost her confidence and ability.",
+        "Often run talks on important topics within our frontend guild, helping to share knowledge and improve the codebase.",
+        "I am familiar with micro-frontend architecture in React, supporting the development of an existing modular frontend system.",
+        "Creating various APIs using .NET, often in conjunction with coding the corresponding frontend components.",
+        "I am the lead of various frontend initiatives within the guild to improve our repo, aiming to either eliminate tech debt or upgrade areas of the code, such as converting older JavaScript files to TypeScript or rewriting old Enzyme tests into React Testing Library.",
+        "Involved in the creation of technical tasks for large features, communicating with other key members of the team.",
+        "Help to write components from scratch for our custom component library, discussing ideas with the UX team.",
+        "Involved in the recruitment process of employees. Reviewing CVs, tech tasks and participating in interviews.",
+        "Able to prioritise work well when made aware of live issues whilst currently working on an active feature.",
+        "Collaborating with the principal frontend developers to improve the codebase quality, security and efficiency.",
+        "Confident with CI/CD pipelines and creating GitHub Actions to automate tasks, helping make processes more efficient or to collect data on the repositories for a bespoke dashboard.",
+      ],
+    },
     {
       company: "Davies Group, Llanelli - Software Developer",
-      date: "Jul 2022 to present",
+      date: "Jul 2022 to Feb 2024",
       description: [
         "Created various forms using React Hook Form and Zod for validation, then sent the data via APIs using React Query.",
         "Was noticed for my capabilities and was tasked with implementing a complex checkout process. Taking ownership of this freed up more time for leadership team.",

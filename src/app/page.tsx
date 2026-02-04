@@ -1,4 +1,11 @@
-import { education, interests, jobs, myInfo, skills, statement } from "./data";
+import {
+  education,
+  jobs,
+  myInfo,
+  skills,
+  statementA,
+  statementB,
+} from "./data";
 
 export default function Home() {
   return (
@@ -13,7 +20,8 @@ export default function Home() {
               </span>
             ))}
           </div>
-          <p className="statement">{statement}</p>
+          <p className="statement">{statementA}</p>
+          <p className="statement">{statementB}</p>
         </div>
         <div className="education">
           <h2>Education</h2>
